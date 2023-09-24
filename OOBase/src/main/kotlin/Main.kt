@@ -1,8 +1,37 @@
-fun main(args: Array<String>) {
+fun main(args: Array<String>){
+    var numbers = mutableListOf<Int>(5,6,7,8,9,0)
+    var plus = 0
+    for (i in ){
+        println(i)
+    }
+}
+
+fun listtask2(){
+    {
+        var numbers = mutableListOf<Int>(5,6,7)
+        for (i in 0..4){
+            println(i)
+        }
+
+        for (i in numbers.indices){
+            println(numbers[i])
+            numbers[i] = numbers[i]+1
+        }
+    }
+}
 
 
+fun listtask(){
+    var city = listOf<String>("Omsk","Moscow","London")
+    println(city[2])
+    var names = mutableListOf<String>("Aleksandra","Nikolai")
+    names.add("Aleksandra")
+    names.removeAt(1)
+    names.remove("")
+    var food = listOf<Int>(1,2,3)
 
 }
+
 // задачи по теме if-else
 fun  ifFirsttask(){
     var x = 6
