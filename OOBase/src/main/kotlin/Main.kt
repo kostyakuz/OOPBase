@@ -1,8 +1,24 @@
 fun main(args: Array<String>){
-    var numbers = mutableListOf<Int>(5,6,7,8,9,0)
-    var plus = 0
-    for (i in ){
-        println(i)
+    val numbers = listOf<Int>(13,65,3,67,-3,1)
+    val x = findMax(numbers)
+    println(x)
+}
+
+
+fun  findMax(inputList: List<Int>) : Int {
+    var max = Int.MIN_VALUE
+    for (i in inputList.indices) {
+        if (max < inputList[i]) {
+            max = inputList[i]
+        }
+    }
+    return max
+}
+
+
+fun printList(inputList: List<Any>){
+    for (i in inputList.indices){
+        println(inputList[i])
     }
 }
 
